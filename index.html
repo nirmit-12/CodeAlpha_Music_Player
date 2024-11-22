@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STREAMIX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <h1>Streamix</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Your Library</a></li>
+    </ul>
+  </div>
+
+  <!--main content-->
+  <div class="main-content">
+    <h2>Playlist</h2>
+    <div class="playlist">
+      <div class="track" data-src="Main Bola Hey.mp3">
+        <img src="kota-factory-season-1-music-from-tvf-original-series--cover-image.webp" alt="Main Bola Hey">
+        <div class="track-info">
+          <h3>Main Bola Hey </h3>
+          <p>karthik Rao</p>
+        </div>
+      </div>
+      <div class="track" data-src="_Be Mine_320(PagalWorld.com.sb).mp3">
+        <img src="be mine.jpg" alt="be mine">
+        <div class="track-info">
+          <h3>Be Mine</h3>
+          <p>Shubh</p>
+        </div>
+      </div>
+      <div class="track" data-src="Millionaire_320(PagalWorld.com.sb).mp3">
+        <img src="million.jpg" alt="Track 3">
+        <div class="track-info">
+          <h3>Millionaire</h3>
+          <p>Yo Yo Honey Singh</p>
+        </div>
+      </div>
+      <div class="track" data-src="Jaana Samjho Na - Bhool Bhulaiyaa 3 320 Kbps.mp3">
+        <img src="samjho na cover pic.jpg" alt="Samjho Na">
+        <div class="track-info">
+          <h3>Samjho Na</h3>
+          <p>Aditya Rikhari</p>
+        </div>
+      </div>
+      <div class="track" data-src="Billie_Eilish_-_everything_i_wanted_(Audio)(128k).mp3">
+        <img src="billie.jpeg" alt="everything i wanted">
+        <div class="track-info">
+          <h3>Everything i wanted </h3>
+          <p>billie Eilish</p>
+        </div>
+      </div>
+      <div class="track" data-src="Gaddi_Pichhe_Naa_-_Khan_Bhaini__Shipra_Goyal__Official_Punjabi_Song_2019__Ditto_Music__ST_Studio(128k).mp3">
+        <img src="gaddi piche na cover pic.jpeg" alt="Gaddi Piche Naa">
+        <div class="track-info">
+          <h3>Gaddi Piche Naa </h3>
+          <p>bhaini khan,shipra goyal</p>
+        </div>
+      </div>
+      <div class="track" data-src="Tera_Zikr_-_Darshan_Raval__Official_Video_-_Latest_New_Hit_Song(128k).mp3">
+        <img src="darshan raval.jpeg" alt="Tera Zikr">
+        <div class="track-info">
+          <h3>Tera Zikr </h3>
+          <p>Darshan Raval</p>
+        </div>
+      </div>
+      <div class="track" data-src="_Payal_320(PagalWorld.com.sb).mp3">
+        <img src="payal cover pic.jpg" alt="Payal">
+        <div class="track-info">
+          <h3>Payal</h3>
+          <p>Honey singh,Paradox</p>
+        </div>
+      </div>
+      <div class="track" data-src="Sunflower (Spider-Man_ Into the Spider-Verse)(PagalWorld).mp3">
+        <img src="sunflowe cover.webp" alt="Sunflower">
+        <div class="track-info">
+          <h3>Sunflower</h3>
+          <p>Post Malone </p>
+        </div>
+      </div>
+      <div class="track" data-src="Shawn_Mendes_-_Stitches_(Official_Video)(128k).mp3">
+        <img src="stitches cover.jpeg" alt="stiches">
+        <div class="track-info">
+          <h3>Stitches</h3>
+          <p>Shawn Mendes</p>
+        </div>
+      </div>
+      <div class="track" data-src="Halsey_-_Without_Me_ft._Juice_WRLD_(Clean_-_Lyrics)(128k).mp3">
+        <img src="without me.jpeg" alt="without me">
+        <div class="track-info">
+          <h3>Without Me</h3>
+          <p>Halsey</p>
+        </div>
+      </div>
+      <div class="track" data-src="Lil_Nas_X_-_Old_Town_Road_(Lyrics)_ft._Billy_Ray_Cyrus(128k).mp3">
+        <img src="lil nas.jpeg" alt="old town Road">
+        <div class="track-info">
+          <h3>old town road</h3>
+          <p>Lil nas </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="player">
+    <div class="player-info">
+      <img src="" alt="Current Song" id="currentTrackImg">
+      <div class="player-details">
+        <h3 id="currentSongTitle">Song Title 1</h3>
+        <p id="currentArtist">Artist 1</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn">&#9664;</button>
+      <button id="playPauseBtn">&#9658;</button>
+      <button id="nextBtn">&#9654;</button>
+    </div>
+
+    <input type="range" id="progressBar" value="0" max="100">
+    <div class="time">
+      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <input type="range" id="volumeControl" value="100" max="100">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
